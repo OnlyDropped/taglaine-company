@@ -3,6 +3,17 @@
   font-weight: 400;
   font-style: normal;
 }
+body,
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex-grow: 1;
+}
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -11,4 +22,23 @@
 a {
   font-size: 12px;
   line-height: 14px;
+}
+.title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba($white-color, 1);
+  position: relative;
+  margin-bottom: 60px;
+  &:before {
+    position: absolute;
+    content: "";
+    top: -46px;
+    left: 0;
+    background: #c8a35f;
+    width: 90px;
+    height: 6px;
+  }
 }
