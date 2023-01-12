@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
@@ -52,6 +53,29 @@
         <a class="hero__mouse" href="">
           <img src="img/icons/mouse.svg" alt="mouse">
         </a>
+      </div>
+    </section>
+    <section class="all-services">
+      <div class="container">
+        <div class="all-services__inner">
+          <div class="all-services__info">
+            <h2 class="all-services__title title">грузоперевозки по европе</h2>
+            <p class="all-services__text">Страны Евросоюза, а также Украина, Белоруссия со всеми документами.</p>
+            <a class="all-services__more" href="">ПОДРОБНЕЕ</a>
+          </div>
+          <div class="all-services__slider">
+            <div class="all-services__item">
+              <div class="all-services__card">
+                <img class="all-services__img" src="img/truck.png" alt="">
+              </div>
+            </div>
+            <div class="all-services__item">
+              <div class="all-services__card">
+                <img class="all-services__img" src="img/truck.png" alt="">
+              </div>
+            </div>            
+          </div>
+        </div>  
       </div>
     </section>
     <section class="services">
@@ -172,6 +196,11 @@
         </div>
       </div>
     </section>
+    <section class="map">
+      <div class="container">
+
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="container">
@@ -193,5 +222,17 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+    $('.all-services__slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevArrow: '<button type="button" class="slick-prev">след</button>',
+      nextArrow: '<button type="button" class="slick-next">Назад</button>',
+      // fade: true,
+      cssEase: 'linear'
+    })
+  </script>
 </body>
 </html>
