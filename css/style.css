@@ -114,6 +114,13 @@ a {
   height: 6px;
 }
 
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
 .header-top {
   background: #C8A35F;
   padding: 16px 0;
@@ -227,6 +234,12 @@ a {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #fff;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.header-nav__list li a:hover {
+  color: #C8A35F;
 }
 
 .hero {
@@ -277,6 +290,20 @@ a {
 .all-services {
   padding: 166px 0 129px;
   background: #393f47;
+  position: relative;
+}
+
+.all-services::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #2F343A;
+  height: 100%;
+  width: 410px;
 }
 
 .all-services__inner {
